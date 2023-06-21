@@ -150,3 +150,57 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 1368)
 
 
+Started GET "/pages/hello" for ::1 at 2023-06-21 15:01:53 +0430
+Processing by PagesController#hello as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/hello.html.erb within layouts/application
+  Rendered pages/hello.html.erb within layouts/application (Duration: 2.8ms | Allocations: 372)
+  Rendered layout layouts/application.html.erb (Duration: 356.9ms | Allocations: 95222)
+Completed 200 OK in 371ms (Views: 360.3ms | ActiveRecord: 0.0ms | Allocations: 101690)
+
+
+Started GET "/pages/hello" for ::1 at 2023-06-21 15:02:48 +0430
+Processing by PagesController#hello as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/hello.html.erb within layouts/application
+  Rendered pages/hello.html.erb within layouts/application (Duration: 4.0ms | Allocations: 114)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 2940)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 4014)
+
+
+Started GET "/pages/hello" for ::1 at 2023-06-21 15:03:26 +0430
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for ::1 at 2023-06-21 15:03:30 +0430
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+Started GET "/" for ::1 at 2023-06-21 15:03:39 +0430
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+Started GET "/" for ::1 at 2023-06-21 15:04:11 +0430
+Processing by PagesController#hello as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/hello.html.erb within layouts/application
+  Rendered pages/hello.html.erb within layouts/application (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 14933)
+Completed 200 OK in 19ms (Views: 18.8ms | ActiveRecord: 0.0ms | Allocations: 15673)
+
+
+Started GET "/pages/hello" for ::1 at 2023-06-21 15:04:33 +0430
+  
+ActionController::RoutingError (No route matches [GET] "/pages/hello"):
+  
+Started GET "/" for ::1 at 2023-06-21 15:04:52 +0430
+Processing by PagesController#hello as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/hello.html.erb within layouts/application
+  Rendered pages/hello.html.erb within layouts/application (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 26.8ms | Allocations: 14940)
+Completed 200 OK in 30ms (Views: 28.9ms | ActiveRecord: 0.0ms | Allocations: 15682)
+
+
